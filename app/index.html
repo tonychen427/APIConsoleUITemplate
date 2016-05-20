@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>loginPortal</title>
+		<meta name="description" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel='stylesheet' href='lib/8x8/styles.css' type='text/css' />
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="lib/bower/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bower/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/customize/adminlte-bower/dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="lib/customize/adminlte-bower/dist/css/skins/skin-blue-light.min.css">
+        <link rel='stylesheet' href='styles/portal.css' type='text/css' />
+        <!-- endbuild -->
+		
+		<!-- build:js lib/modernizr.js -->
+		<script src="lib/bower/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+	</head>
+		<!--[if lt IE 10]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+    <body class="hold-transition skin-blue-light sidebar-mini ">
+        <div class="wrapper">
+            <header class="extra">
+            <div class="callout callout-info">
+                <h4>Reminder!</h4>
+                Instructions for how to use modals are available on the
+                <a href="http://getbootstrap.com/javascript/#modals">Bootstrap documentation</a>
+            </div>
+            </header>
+            <header class="main-header fixed">
+                <!-- Logo -->
+                <a href="index3.html" class="logo">
+                    <span class="logo-mini"><div class="icon icon-8x8-logo mini-logofix"></div></span>
+                    <div class="logo-lg">
+                        <div class="lg_wrapper">
+                            <div>
+                                <div class="icon icon-8x8-logo logofix"></div>
+                            </div>
+                            <div><b class="app-title">Login</b>Portal</div>
+                        </div>
+                    </div>
+                </a>
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="images/user2-160x160.png" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">Vikram Verma</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="images/user2-160x160.png" class="img-circle" alt="User Image">
+                                        <p>
+                                            Vikram Verma - Web Developer
+                                            <small>Member since Nov. 2016</small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Body -->
+                                    <li class="user-body">
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Followers</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Sales</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Friends</a>
+                                        </div>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="images/user2-160x160.png" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+                            <p>Vikram Verma</p>
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+<!--                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>-->
+                    <ul class="sidebar-menu">
+                        <li class="header">MAIN NAVIGATION</li>                        
+                         <li>
+                            <a ui-sref="route1">
+                                <i class="fa fa-th"></i> <span>My App</span> <small class="label pull-right bg-green">new</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="apiExplorer">
+                                <i class="fa fa-search"></i> <span>API Explorer</span> <small class="label pull-right bg-green">new</small>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-file"></i>
+                                <span>Documentation</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">                                
+                                <li><a ui-sref="documentation.java"><i class="fa fa-circle-o"></i>Java</a></li>
+                                <li><a ui-sref="documentation.android"><i class="fa fa-circle-o"></i>Andorid</a></li>
+                                <li><a ui-sref="documentation.ios"><i class="fa fa-circle-o"></i>iOS</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-random"></i>
+                                <span>Reference</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a ui-sref="reference.brandingGuide"><i class="fa fa-circle-o"></i>Branding guide</a></li>
+                                <li><a ui-sref="reference.brandingGuide"><i class="fa fa-circle-o"></i>Developer guide</a></li>
+                                <li><a ui-sref="reference.brandingGuide"><i class="fa fa-circle-o"></i>OAuth guide</a></li>
+                                <li><a ui-sref="reference.brandingGuide"><i class="fa fa-circle-o"></i>Webhooks</a></li>
+                            </ul>
+                        </li>                       
+                    </ul>
+                </section>
+            </aside>
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+<!--                <section class="content-header">
+                    <h1>Dashboard
+                        <small>Control panel</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Dashboard</li>
+                    </ol>
+                </section>-->
+                <section class="content">
+
+
+                    <div ui-view></div>
+                    <!--[if lt IE 10]>
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                    <![endif]-->
+                    <div class="view" data-ng-view>
+                        <div class="loading-indicator"></div>
+                    </div>
+
+                </section>
+            </div>
+            <footer class="main-footer">
+                <strong>Copyright &copy; 2016 <a href="http://www.8x8.com">8x8</a>.</strong> All rights reserved.
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.0.0
+                </div>
+            </footer>
+        </div>
+
+		<!-- build:js scripts/main.js -->
+		<script src="lib/bower/requirejs/require.js"></script>
+		<script src="scripts/config/dev-config.js"></script>
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>

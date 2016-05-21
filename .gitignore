@@ -10,3 +10,4 @@ coverage
 # IntelliJ project files
 *.iml
 .idea
+!/app/lib/customize/adminlte-bower/dist/
